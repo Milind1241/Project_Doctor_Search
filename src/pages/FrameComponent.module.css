@@ -87,8 +87,6 @@
   width: 112px;
 }
 .loginbutton {
-  border: 0;
-  padding: 0;
   background-color: #d8c4b6;
   top: 72px;
   right: 51px;
@@ -100,12 +98,12 @@
 .frameChild,
 .login,
 .loginbutton {
-  position: absolute;
   cursor: pointer;
-}
-.login {
   border: 0;
   padding: 0;
+  position: absolute;
+}
+.login {
   background-color: transparent;
   top: 83px;
   right: 68px;
@@ -119,10 +117,10 @@
   height: 29px;
 }
 .frameChild {
+  background-color: #f5efe7;
   top: 70px;
   left: 52px;
   border-radius: 50px;
-  background-color: #f5efe7;
   width: 54px;
   height: 54px;
 }

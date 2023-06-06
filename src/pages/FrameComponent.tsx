@@ -1,7 +1,7 @@
 import { FunctionComponent, useCallback } from "react";
 import styles from "./FrameComponent.module.css";
 const FrameComponent: FunctionComponent = () => {
-  const onRectangleClick = useCallback(() => {
+  const onRectangleButtonClick = useCallback(() => {
     const anchor = document.querySelector("[data-scroll-to='text']");
     if (anchor) {
       anchor.scrollIntoView({ block: "start", behavior: "smooth" });
@@ -29,11 +29,9 @@ const FrameComponent: FunctionComponent = () => {
       <b className={styles.healthMedicine}>{`Health & Medicine`}</b>
       <b className={styles.services}>Services</b>
       <b className={styles.consulation}>Consulation</b>
-      <button className={styles.loginbutton} autoFocus />
-      <button className={styles.login} autoFocus>
-        Login
-      </button>
-      <div className={styles.frameChild} onClick={onRectangleClick} />
+      <button className={styles.loginbutton} />
+      <button className={styles.login}>Login</button>
+      <button className={styles.frameChild} onClick={onRectangleButtonClick} />
       <img
         className={styles.menubuttonIcon}
         alt=""
@@ -59,8 +57,8 @@ const FrameComponent: FunctionComponent = () => {
       <div className={styles.text} id="Test" data-scroll-to="text">
         Find Your Doctor...
       </div>
-      <button className={styles.searchbox1} autoFocus />
-      <button className={styles.searchIcon1} autoFocus />
+      <button className={styles.searchbox1} />
+      <button className={styles.searchIcon1} />
       <img
         className={styles.medicalDoctorsAndNursesCarIcon}
         alt=""
